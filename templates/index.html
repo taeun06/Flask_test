@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>solved.ac API 연습</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  </head>
+  <body>
+    <form id="problemForm">
+      <label for="probCode">문제 번호 : </label>
+      <input type="text" id="probCode" name="probCode">
+      <button type="submit">불러오기</button>
+    </form>
+    <div id="dataPanel"></div>
+    <script src="{{ url_for('static', filename='js/index.js') }}" defer></script>
+  </body>
+</html>
